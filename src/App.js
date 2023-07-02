@@ -1,7 +1,16 @@
 import "./App.css";
+import TodoList from "./TodoList";
 
 function App() {
-  return <div>Hello React!</div>;
+  return (
+    <>
+      <TodoList />
+      <input type="text"></input>
+      <button>タスクを追加</button>
+      <button>完了したタスクの削除</button>
+      <div>残りのタスク:0</div>
+    </>
+  );
 }
 
 export default App;
